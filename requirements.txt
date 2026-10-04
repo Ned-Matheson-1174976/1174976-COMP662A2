@@ -1,0 +1,43 @@
+# COMP662 Assignment 2 — reference environment
+#
+# This exact combination was installed and run end to end by course staff on 2026-09-06:
+# corpus parsing, BGE embeddings, a FAISS index over the supplied corpus, retrieval scored
+# against gold_relevance.csv, and greedy generation with Qwen2.5-1.5B-Instruct.
+#
+# Tested on: macOS 15.7 (Apple Silicon, arm64), Python 3.9.6.
+# Python 3.10 or newer is recommended for new environments.
+#
+# Install with:
+#     python3 -m venv .venv && source .venv/bin/activate
+#     pip install -r requirements.txt
+#
+# Pin your own versions in the README.md you submit. If you deviate from the versions
+# below, say so in your README and confirm your notebook still runs top to bottom.
+
+# --- core numerical stack ---
+numpy==2.0.2
+
+# --- generation ---
+torch==2.8.0
+transformers==4.57.6
+tokenizers==0.22.2
+safetensors==0.7.0
+
+# --- embeddings and vector store ---
+sentence-transformers==5.1.2
+faiss-cpu==1.13.0
+
+# --- corpus parsing ---
+pypdf==6.17.0
+
+# --- analysis ---
+scikit-learn==1.6.1
+matplotlib==3.9.4
+pandas==2.2.3
+
+# --- notebook ---
+jupyter==1.1.1
+
+# Not required. `accelerate` is only needed if you load the model with device_map="auto";
+# MODEL_SETUP.md recommends selecting the device explicitly instead.
+# accelerate==1.10.1

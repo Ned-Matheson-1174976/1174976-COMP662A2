@@ -1,0 +1,14 @@
+Tools Used
+
+MS Co-pilot
+	- Debugging
+	- Over all checking of work
+	- Spellchecking
+	- Creating Visualisations
+	- Formatting of tables
+	- Help with gold_revelance dataframes
+	- First Draft of Readme.md
+
+Google Gemini 
+	- Final Check of work
+	- Recommendations for some visualisations
